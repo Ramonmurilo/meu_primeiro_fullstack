@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM, parte 1</title>
+</head>
+<body>
+
+    <!-- 
+        adicione o script, preferencialmente, no fim do documento. Motivo:
+        Quando uma página é carregada, o fluxo é o seguinte:
+            - a requisição atinge o endereço (e.g. index.html)
+            - o HTML começa a ser interpretado pelo navegador
+            - o interpretador encontra uma tag <script>
+            - enquanto o script externo não é carregado, o interpretador é pausado
+            - o script é obtido e executado
+            - o interpretador continua a ler o HTML
+    -->
+
+    <button id="botao" type="button">Clica aqui</button>
+    <script src="teste.js"></script>
+    
+</body>
+</html>

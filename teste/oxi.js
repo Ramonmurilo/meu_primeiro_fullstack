@@ -1,0 +1,79 @@
+<soapenv:Envelope xmlns:hdr="http://xmlns.energia.org.br/MH/v1"
+xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+ <soapenv:Header>
+ <mh:messageHeader xmlns:mh="http://xmlns.energia.org.br/MH/v1">
+ <mh:codigoPerfilAgente>9999</mh:codigoPerfilAgente>
+ <mh:transactionId>12345678-1234-1234-1234-123456789012</mh:transactionId>
+ </mh:messageHeader>
+ <hdr:paginacao>
+ <hdr:numero>1</hdr:numero>
+ <hdr:quantidadeItens>1</hdr:quantidadeItens>
+ <hdr:totalPaginas>8761</hdr:totalPaginas>
+ <hdr:quantidadeTotalItens>8761</hdr:quantidadeTotalItens>
+ </hdr:paginacao>
+ </soapenv:Header>
+ <soapenv:Body>
+ <bm:listarPLDResponse xmlns:bo="http://xmlns.energia.org.br/BO/v1"
+xmlns:bm="http://xmlns.energia.org.br/BM/v1">
+ <bm:plds>
+ <bm:pld>
+ <bo:vigencia>
+ <bo:inicio>2018-12-31T23:00:00-03:00</bo:inicio>
+ <bo:fim>2019-01-01T00:00:00-03:00</bo:fim>
+ </bo:vigencia>
+ <bo:valores>
+ <bo:valor>
+ <bo:indicadorRedeEletrica>false</bo:indicadorRedeEletrica>
+<bo:submercado>
+ <bo:codigo>1</bo:codigo>
+<bo:nome>SUDESTE</bo:nome>
+ </bo:submercado>
+<bo:tipo>HORARIO</bo:tipo>
+<bo:valor>
+ <bo:codigo>BRL</bo:codigo>
+<bo:valor>124.01</bo:valor>
+ </bo:valor>
+ </bo:valor>
+<bo:valor>
+ <bo:indicadorRedeEletrica>false</bo:indicadorRedeEletrica>
+ <bo:submercado>
+ <bo:codigo>2</bo:codigo>
+<bo:nome>SUL</bo:nome>
+ </bo:submercado>
+<bo:tipo>HORARIO</bo:tipo>
+<bo:valor>
+ <bo:codigo>BRL</bo:codigo>
+<bo:valor>124.05</bo:valor>
+ </bo:valor>
+ </bo:valor>
+<bo:valor>
+ <bo:indicadorRedeEletrica>false</bo:indicadorRedeEletrica>
+<bo:submercado>
+ <bo:codigo>3</bo:codigo>
+<bo:nome>NORDESTE</bo:nome>
+ </bo:submercado>
+<bo:tipo>HORARIO</bo:tipo>
+<bo:valor>
+ <bo:codigo>BRL</bo:codigo>
+<bo:valor>123.99</bo:valor>
+ </bo:valor>
+ </bo:valor>
+<bo:valor>
+ <bo:indicadorRedeEletrica>false</bo:indicadorRedeEletrica>
+ <bo:submercado>
+ <bo:codigo>4</bo:codigo>
+<bo:nome>NORTE</bo:nome>
+ </bo:submercado>
+<bo:tipo>HORARIO</bo:tipo>
+<bo:valor>
+ <bo:codigo>BRL</bo:codigo>
+<bo:valor>123.95</bo:valor>
+ </bo:valor>
+ </bo:valor>
+ </bo:valores>
+ </bm:pld>
+ </bm:plds>
+ </bm:listarPLDResponse>
+ </soapenv:Body>
+</soapenv:Envelope>

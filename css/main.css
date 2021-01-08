@@ -1,0 +1,145 @@
+body{
+width: 100%;
+height: 100%;
+margin: 0 auto;
+}
+.menu-principal {
+width: 100%;
+background-color:ghostwhite;
+height: 150px;
+}
+main {
+margin: 0 auto;
+width: 980px;
+position: relative;
+}
+.logo {
+float: left;
+padding: 2 px;
+width: 10%;
+}
+.redes-sociais ul li{
+margin-left: 10px;
+display: inline-block;
+float: right;
+list-style: none;
+}
+.redes-sociais {
+width: 70%;
+float: right;
+}
+.header-2{
+background-color: #ffffff;
+width: 980px;
+margin: 0 auto;
+border-bottom: 3px solid gray;
+}
+.menu-urls{
+    width: 980px;
+    margin: 0 auto;
+    border-bottom: 3px solid gray;
+    
+}
+.menu ul li{
+    display: inline-block;
+    color: #8b8b8b;
+    margin-left: 10px;
+}
+.menu ul li a:hover{
+    color: rgb(102, 102, 207);
+    border-bottom: 1px solid rgb(102, 102, 207);
+}
+.menu ul li a {
+    color: #8b8b8b;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.menu{
+width: 70%;
+float: left;
+}
+.busca {
+ 
+width: 30%;
+float: right;
+}
+.busca input{
+    background-image: url('../img/icone-search.png');
+    background-repeat: no-repeat;
+    background-position: 96%;
+    height: 30px;
+    padding: 15px;
+    width: 190px;
+    margin-top: 12px;
+}
+.col-100{
+    width: 100%;
+    float: left;
+    position: relative;
+}
+.slider-principal {
+    height: 80%;
+    width: 80%;
+    margin-left: 10%;
+}
+.slider-navegador {
+    height: 20%;
+    width: 50%;
+    margin-left: 25%;
+}
+button.slick-prev{
+    background-image: url('../img/arrow-left-short.svg');
+    font-size: 0px;
+    border: none;
+    z-index:9;
+    background-repeat: no-repeat;
+    background-color:transparent;
+    background-size: 50px 50px;
+    position: absolute;
+    width: 40px;
+    height: 50px;
+    top: 52%;
+    left: -8%;
+}
+button.slick-next{
+    background-image: url('../img/arrow-right-short.svg');
+    font-size: 0px;
+    border: none;
+    z-index:9;
+    background-repeat: no-repeat;
+    background-color:transparent;
+    background-size: 50px 50px;
+    position: absolute;
+    width: 40px;
+    height: 50px;
+    top: 52%;
+    right: -8%;
+}
+
+.slick-dots li button {
+    font-size: 0px;
+    border: 3px solid black;
+    background-color: transparent;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.slick-dots{
+    margin: 0 auto;
+    width: 50%;
+    position: absolute;
+    left: 35%;
+    bottom: -20px;
+}
+li.slick-active button{
+    background: turquoise;
+}
+
+.slick-dots li{
+    padding-left: 10px;
+    display: inline-block;
+}
+
